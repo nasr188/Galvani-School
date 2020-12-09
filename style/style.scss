@@ -1,0 +1,185 @@
+ 
+ $colors:(
+    primary: #E6222E,
+    general: rgb(0,0,0),
+    basic:rgba(255,255,255,1.0),
+    palat :#1D3557,
+    hov: #80C6FF,
+    span : #B0DFE5,
+
+);
+
+@function color($color-name){
+    @return map-get($colors,$color-name)
+};
+
+
+html,
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    box-sizing: border-box;
+};
+body{
+    .landing-p{
+        height: 100vh;
+        background-image: url(/assets/school2.jpeg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 0;
+        padding: 0;
+      .header{
+          cursor: pointer;
+          padding-top:15px ;
+        margin: 20px;
+        .logo{
+            
+            display: inline-block;
+            
+
+            h1{
+                width: 50px;
+               // border: 1px solid black;
+            color: color(primary);
+            margin-bottom: 0;
+
+            &::first-letter{
+                       color: color(basic);
+            }
+  
+              }
+
+            hr{
+            
+                width: 50px;
+                float: left;
+                margin: -3 0 0 0 ;
+
+            }
+
+            p{
+                width: 70px;
+               // border: 1px solid black;
+            color: color(primary);
+            margin:0;
+            text-transform: uppercase;
+            color: red($color: #000000);
+    &::first-line{
+         color: color(basic);
+}
+            }
+            }
+
+        }
+    .burger-menu{
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        float: right;
+        margin: 30px 20px 0 0;
+        z-index: 100;
+        
+      
+.line{
+    z-index: 100;
+    border: 1px slid black;
+    border-radius: 5px;
+    padding: 1.5px;
+    width: 42px;
+    background-color:color(basic);
+    margin: 3px;
+    box-shadow: 1px 3px 9px rgba(0,0,0,0.4);
+    
+}
+.change1 {
+    transform: rotateZ(-45deg) translate(-8px, 4px);
+}
+.change2 { 
+    visibility: hidden;
+}
+.change3 {
+    transform: rotateZ(45deg) translate(-8px, -4px);
+}
+
+}
+.paragrafo{
+ margin-top: 160px;
+ cursor: default;
+
+    p{
+    height: auto;
+text-align: center;
+font-family: sans-serif;
+font-size: 40px;
+letter-spacing: 2px;
+line-height: 90px;
+color: color(basic);
+
+}
+.changep{
+    visibility: hidden;
+}
+}
+
+.indirizzo{
+    text-align: center;
+    height: auto;
+    margin:100px 0 0 0 ;
+    cursor: default;
+    
+    p{
+        color: color(basic);
+        line-height: 23px;
+        span{
+            color:color(span);
+        }
+        &:hover{
+            color:color(hov);
+        }
+    }
+}
+    }
+    
+    
+
+       .change{
+        opacity: 0.9;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        box-sizing: border-box;
+        position: fixed;
+        z-index: 90;
+        height: 100vh;
+        width: 100vw;
+        background-color: color(basic);
+        color: white;
+        ul{
+            height: 100vh;
+            width: 100%;
+            list-style: none;
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            justify-content: center;
+            li{
+               margin: 4px;
+               padding: 4px;
+                a{
+                    font-family: sans-serif;
+                    font-size: 30px;
+                    text-decoration: none;
+                    color: color(general);
+                    &:hover{
+                        color: color(primary);
+                    }
+                }
+            }
+        }
+    }
+    
+}
