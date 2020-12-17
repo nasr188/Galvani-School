@@ -1,5 +1,4 @@
- 
- $colors:(
+$colors:(
     primary: #E6222E,
     general: rgb(0,0,0),
     basic:rgba(255,255,255,1.0),
@@ -8,6 +7,8 @@
     span : #B0DFE5,
 
 );
+
+
 
 @function color($color-name){
     @return map-get($colors,$color-name)
@@ -18,19 +19,20 @@ html,
 body{
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    
     width: 100%;
     box-sizing: border-box;
 };
 body{
     .landing-p{
-        height: 100vh;
-        background-image: url(/assets/school2.jpeg);
-        background-position: center;
+    
+        background-image: url(/assets/school3.jpeg);
+        //background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
         margin: 0;
         padding: 0;
+        overflow: hidden;
       .header{
           cursor: pointer;
           padding-top:15px ;
@@ -66,7 +68,7 @@ body{
             color: color(primary);
             margin:0;
             text-transform: uppercase;
-            color: red($color: #000000);
+            color:color(primary);
     &::first-line{
          color: color(basic);
 }
@@ -89,9 +91,9 @@ body{
     border-radius: 5px;
     padding: 1.5px;
     width: 42px;
-    background-color:color(basic);
+    background-color:color(general);
     margin: 3px;
-    box-shadow: 1px 3px 9px rgba(0,0,0,0.4);
+    box-shadow: 1px 9px 14px rgba(247, 244, 244,1);
     
 }
 .change1 {
@@ -105,61 +107,29 @@ body{
 }
 
 }
-.paragrafo{
- margin-top: 160px;
- cursor: default;
 
-    p{
-    height: auto;
-text-align: center;
-font-family: sans-serif;
-font-size: 40px;
-letter-spacing: 2px;
-line-height: 90px;
-color: color(basic);
-
-}
-.changep{
-    visibility: hidden;
-}
-}
-
-.indirizzo{
-    text-align: center;
-    height: auto;
-    margin:100px 0 0 0 ;
-    cursor: default;
-    
-    p{
-        color: color(basic);
-        line-height: 23px;
-        span{
-            color:color(span);
-        }
-        &:hover{
-            color:color(hov);
-        }
     }
-}
+    .navvv{
+    
+          display: none;
     }
-    
-    
-
-       .change{
+    .change{
         opacity: 0.9;
-        top: 0;
+        display: block;
+        top: 20px;
         right: 0;
-        left: 0;
-        bottom: 0;
+        left: auto;
+        bottom: auto;
         box-sizing: border-box;
         position: fixed;
         z-index: 90;
         height: 100vh;
-        width: 100vw;
+        width:30%;
         background-color: color(basic);
         color: color(basic);
         ul{
-            height: 100vh;
+            margin: 65px 0 0 0;
+            padding-top: 65px;
             width: 100%;
             list-style: none;
             display: flex;
@@ -181,5 +151,70 @@ color: color(basic);
             }
         }
     }
+    .card-menu{
+        margin: 5px;
+        padding: 0;
+        box-sizing: border-box;
+        //width: 100%;
+        height: auto;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+       
+       
+
+        .card-com{
+            box-shadow: 1px 3px 5px rgb(0, 0, 0);
+            margin: 10px;
+            width: 27%;
+            //border: 1px solid red;
+            height: 14rem;
+            flex-grow: 3;
+            &:hover{
+                animation-name: grow;
+                animation-duration: 2s; 
+                animation-timing-function: ease-out; 
+                animation-delay: 0;
+                animation-direction: alternate;
+                animation-iteration-count: infinite;
+                //animation-fill-mode: none;
+                //animation-play-state: running;
+            }
+            @keyframes grow {
+                0% {
+                  transform: scale(1);
+                }
+                
+                100% {
+                  transform: scale(1.1); 
+                }
+            }
+.img{
+    //border: 1px solid black;
+    height: 150px;
+    width: auto;
+    overflow: hidden;
     
+    img{
+        width: 100%;
+
+    height: 100%;
+    
+    }
+    
+   
+}
+
+        }
+        .link{
+            text-align: center;
+            margin: 20px;
+            
+            a{
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
 }

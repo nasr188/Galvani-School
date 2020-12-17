@@ -1,5 +1,4 @@
- 
- $colors:(
+$colors:(
     primary: #E6222E,
     general: rgb(0,0,0),
     basic:rgba(255,255,255,1.0),
@@ -8,6 +7,8 @@
     span : #B0DFE5,
 
 );
+
+
 
 @function color($color-name){
     @return map-get($colors,$color-name)
@@ -18,19 +19,20 @@ html,
 body{
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    
     width: 100%;
     box-sizing: border-box;
 };
 body{
     .landing-p{
-        height: 100vh;
-        background-image: url(/assets/school2.jpeg);
+    
+        background-image: url(/assets/school1.jpeg);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
         margin: 0;
         padding: 0;
+        overflow: hidden;
       .header{
           cursor: pointer;
           padding-top:15px ;
@@ -66,7 +68,7 @@ body{
             color: color(primary);
             margin:0;
             text-transform: uppercase;
-            color: red($color: #000000);
+            color:color(primary);
     &::first-line{
          color: color(basic);
 }
@@ -105,61 +107,29 @@ body{
 }
 
 }
-.paragrafo{
- margin-top: 160px;
- cursor: default;
 
-    p{
-    height: auto;
-text-align: center;
-font-family: sans-serif;
-font-size: 40px;
-letter-spacing: 2px;
-line-height: 90px;
-color: color(basic);
-
-}
-.changep{
-    visibility: hidden;
-}
-}
-
-.indirizzo{
-    text-align: center;
-    height: auto;
-    margin:100px 0 0 0 ;
-    cursor: default;
-    
-    p{
-        color: color(basic);
-        line-height: 23px;
-        span{
-            color:color(span);
-        }
-        &:hover{
-            color:color(hov);
-        }
     }
-}
+    .navvv{
+    
+          display: none;
     }
-    
-    
-
-       .change{
+    .change{
         opacity: 0.9;
-        top: 0;
+        display: block;
+        top: 20px;
         right: 0;
-        left: 0;
-        bottom: 0;
+        left: auto;
+        bottom: auto;
         box-sizing: border-box;
         position: fixed;
         z-index: 90;
         height: 100vh;
-        width: 100vw;
-        background-color: color(basic);
+        width:30%;
+        background-color: color(general);
         color: color(basic);
         ul{
-            height: 100vh;
+            margin: 65px 0 0 0;
+            padding-top: 65px;
             width: 100%;
             list-style: none;
             display: flex;
@@ -173,7 +143,7 @@ color: color(basic);
                     font-family: sans-serif;
                     font-size: 30px;
                     text-decoration: none;
-                    color: color(general);
+                    color: color(basic);
                     &:hover{
                         color: color(primary);
                     }
@@ -181,5 +151,48 @@ color: color(basic);
             }
         }
     }
-    
+    h1{
+        text-align: center;
+    }
+.idcover{
+    //border: 1px solid black;
+    margin: 50px 20px;
+    //width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    .wraper{
+        width: 20%;
+        margin: 10px;
+        //border: 1px solid black;
+        &:hover{
+            box-shadow: 8px 8px 8px 8px  rgba(0,0,0,0.5);
+        }
+         .id-img{
+            //border: 1px solid black;
+            height: 150px;
+            flex-grow: 2;
+            img{
+                height: 100%;
+                width: 100%;
+            }
+         }
+         .id-info{
+             ul{
+                li{
+                    list-style: none;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                }
+             }
+         }
+         .cvchange{
+             position: fixed;
+             background-color: black;
+             top: 150px;
+             
+         }
+    }
+}
 }
