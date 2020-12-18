@@ -3,8 +3,8 @@
         {
             "img":"https://images.unsplash.com/photo-1558482089-e99f9086e662?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTF8fGZhY2VzfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60",
             "nome":"Federica",
-            "cognome":"Doria"
-            
+            "cognome":"Doria",
+            "cv":"Dopo la laurea, inizia il percorso professionale come redattrice e photo editor in una casa editrice per 2 anni successivamente prosegue come content manager nell’area marketing e comunicazione di un’azienda di un gruppo bancario per 9 anni." 
         },
         {
             "img":"https://images.unsplash.com/photo-1560856218-0da41ac7c66a?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTJ8fGZhY2VzfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60",
@@ -15,14 +15,14 @@
         {
             "img":"https://images.unsplash.com/photo-1522724560584-fe4dfa2991f8?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTh8fGZhY2VzfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60",
             "nome":"Carlo",
-            "cognome":"Domenico"
-            
+            "cognome":"Domenico",
+            "cv":"App designer e developer. Si occupa dell’ideazione, sviluppo, pubblicazione di app su Google Play Store ed ASO activities per App su dispositivi Android; della realizzazione di App per associazioni sportive, associazioni culturali, start-up, realtà imprenditoriali, comunità locali; dell’implementazione di Web Strategy."
         },
         {
             "img":"https://images.unsplash.com/photo-1512849934327-1cf5bf8a5ccc?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTl8fGZhY2VzfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60",
             "nome":"Erica",
-            "cognome":"Masetti"
-            
+            "cognome":"Masetti",
+            "cv":"App designer e developer. Si occupa dell’ideazione, sviluppo, pubblicazione di app su Google Play Store ed ASO activities per App su dispositivi Android; della realizzazione di App per associazioni sportive, associazioni culturali, start-up, realtà imprenditoriali, comunità locali; dell’implementazione di Web Strategy."
         },
         {
             "img":"https://images.unsplash.com/photo-1584984793889-6ac1bbe1a2b3?ixid=MXwxMjA3fDB8MHxzZWFyY2h8ODR8fGZhY2VzfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",

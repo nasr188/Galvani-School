@@ -1,10 +1,12 @@
 $colors:(
     primary: #E6222E,
     general: rgb(0,0,0),
+    general2: rgba(0,0,0,0.7),
     basic:rgba(255,255,255,1.0),
     palat :#1D3557,
     hov: #80C6FF,
     span : #B0DFE5,
+    grey: rgba(194, 189, 189, 0.3)
 
 );
 
@@ -26,10 +28,11 @@ body{
 body{
     .landing-p{
     
-        background-image: url(/assets/school1.jpeg);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
+       // background-image: url(/assets/school4.jpeg);
+        //background-position: center;
+        //background-size: cover;
+        //background-repeat: no-repeat;
+        background-color:color(grey);
         margin: 0;
         padding: 0;
         overflow: hidden;
@@ -49,7 +52,7 @@ body{
             margin-bottom: 0;
 
             &::first-letter{
-                       color: color(basic);
+                       color: color(general);
             }
   
               }
@@ -70,7 +73,7 @@ body{
             text-transform: uppercase;
             color:color(primary);
     &::first-line{
-         color: color(basic);
+         color: color(general);
 }
             }
             }
@@ -151,56 +154,34 @@ body{
             }
         }
     }
-    h1{
-        text-align: center;
-    }
-.idcover{
-    //border: 1px solid black;
-    margin: 50px 20px;
-    //width: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-    .wraper{
-        width: 20%;
-        margin: 10px;
-        //border: 1px solid black;
-        &:hover{
-            box-shadow: 8px 8px 8px 8px  rgba(0,0,0,0.5);
+    .table{
+        h1{
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 30px;
         }
-         .id-img{
-            //border: 1px solid black;
-            height: 150px;
-            flex-grow: 2;
-            img{
-                height: 100%;
-                width: 100%;
-            }
-         }
-         .id-info{
-             ul{
-                li{
-                    list-style: none;
-                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                }
-             }
-         }
-         .bio{
-             box-sizing: border-box;
-             text-align: center;
-            height: 200px;
-            //width: 80%;
-            
-            padding: 0;
-             background-color: black;
-             color: white;
-             top: 150px;
-             padding: 5px;
-             
-             
-         }
+       background-color:  white;
+       //border: 1px solid black;
+       width: 100vw;
+       height: auto;
+       align-content: center;
+       margin-top: 20px;
+       .imgcav{
+           //border: 1px solid red;
+           width: 100%;
+           height: 100%;
+           display: flex;
+           flex-flow: row wrap;
+           justify-content: center;
+           align-items: center;
+           box-sizing: border-box;
+           img{
+               background-color: black;
+               //box-sizing: border-box;
+               width: 30%;
+               margin: 5px;
+               height: 300px;
+           }
+       }
     }
-}
 }

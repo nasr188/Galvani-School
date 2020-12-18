@@ -8,10 +8,7 @@ body {
 }
 
 body .landing-p {
-  background-image: url(/assets/school1.jpeg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: rgba(194, 189, 189, 0.3);
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -34,7 +31,7 @@ body .landing-p .header .logo h1 {
 }
 
 body .landing-p .header .logo h1::first-letter {
-  color: white;
+  color: black;
 }
 
 body .landing-p .header .logo hr {
@@ -52,7 +49,7 @@ body .landing-p .header .logo p {
 }
 
 body .landing-p .header .logo p::first-line {
-  color: white;
+  color: black;
 }
 
 body .landing-p .burger-menu {
@@ -152,12 +149,24 @@ body .change ul li a:hover {
   color: #E6222E;
 }
 
-body h1 {
-  text-align: center;
+body .table {
+  background-color: white;
+  width: 100vw;
+  height: auto;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-top: 20px;
 }
 
-body .idcover {
-  margin: 50px 20px;
+body .table h1 {
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  margin: 30px;
+}
+
+body .table .imgcav {
+  width: 100%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -175,42 +184,10 @@ body .idcover {
           box-sizing: border-box;
 }
 
-body .idcover .wraper {
-  width: 20%;
-  margin: 10px;
-}
-
-body .idcover .wraper:hover {
-  -webkit-box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.5);
-          box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.5);
-}
-
-body .idcover .wraper .id-img {
-  height: 150px;
-  -webkit-box-flex: 2;
-      -ms-flex-positive: 2;
-          flex-grow: 2;
-}
-
-body .idcover .wraper .id-img img {
-  height: 100%;
-  width: 100%;
-}
-
-body .idcover .wraper .id-info ul li {
-  list-style: none;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-body .idcover .wraper .bio {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  text-align: center;
-  height: 200px;
-  padding: 0;
+body .table .imgcav img {
   background-color: black;
-  color: white;
-  top: 150px;
-  padding: 5px;
+  width: 30%;
+  margin: 5px;
+  height: 300px;
 }
-/*# sourceMappingURL=docenti.css.map */
+/*# sourceMappingURL=galleria.css.map */
