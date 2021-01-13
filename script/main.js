@@ -64,7 +64,7 @@ cardCom.appendChild(img);
   // append cardCom in card-menu
   console.log(cardCom);*/
  ////corsi
-  var url ="https://github.com/nasr188/nasr188.github.io/blob/master/links/corsi/corsi.json";
+  var url ="https://raw.githubusercontent.com/nasr188/nasr188.github.io/master/links/corsi/corsi.json";
     fetch(url)
   .then(response=>{
       return response.json()
