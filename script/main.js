@@ -38,31 +38,7 @@ function goHome(){
 }
 
 /// creare card content per i corsi 
- /*let cardCom= document.createElement("div");
-cardCom.setAttribute("class","card-com");
-//creare img e la aggiungiamo nel div card-com 
-let img = document.createElement("div");
-img.setAttribute("class","img");
-let imgLink= document.createElement("img");
-  //imgLink.setAttribute("src","");
-  imgLink.setAttribute("src",`${data.avatar}`);
-  imgLink.setAttribute("alt","");
-img.appendChild(imgLink);
-cardCom.appendChild(img);
-//console.log(cardCom);
-//creare link e la aggiungiamo nel div card-com 
-  let link = document.createElement("div");
-  link.setAttribute("class","link");
-  let linkource= document.createElement("a");
-  linkource.setAttribute("href",`${data.link}`);
-  link.appendChild(linkource);
-  cardCom.appendChild(link);
-  //creare div content 
-  let conte = document.createElement("div");
-  conte.setAttribute("div","content");
-  cardCom.appendChild(conte);
-  // append cardCom in card-menu
-  console.log(cardCom);*/
+ 
  ////corsi
   var url ="https://raw.githubusercontent.com/nasr188/nasr188.github.io/master/links/corsi/corsi.json";
     fetch(url)
@@ -95,7 +71,7 @@ father.innerHTML = output
   
 
   ////docenti fetch 
-  let url2 = "https://api.jsonbin.io/b/5fd8e4af7e2e9559b15d29c0/9"
+  let url2 = "https://raw.githubusercontent.com/nasr188/nasr188.github.io/master/links/docenti/docenti.json"
   fetch(url2).then(res=>{
       return res.json()
   })
@@ -206,7 +182,7 @@ divImg.addEventListener("click",(e)=>{
     
   
 ///galleria js 
-let url3 = "https://api.jsonbin.io/b/5fdb5e652fd0b8081255b8de/8"
+let url3 = "https://raw.githubusercontent.com/nasr188/nasr188.github.io/master/links/galleria/galleria.json"
 fetch(url3).then(res=>{
     return res.json()
 }).then(data=>{
