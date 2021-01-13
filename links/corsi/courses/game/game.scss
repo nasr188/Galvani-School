@@ -1,7 +1,6 @@
 $colors:(
     primary: #E6222E,
     general: rgb(0,0,0),
-    general2: rgba(0,0,0,0.7),
     basic:rgba(255,255,255,1.0),
     palat :#1D3557,
     hov: #80C6FF,
@@ -27,8 +26,8 @@ body{
 body{
     .landing-p{
     
-        background-image: url(/assets/school4.jpeg);
-        background-position: center;
+        background-image: url(/assets/media.jpeg);
+        //background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
         margin: 0;
@@ -94,7 +93,7 @@ body{
     width: 42px;
     background-color:color(basic);
     margin: 3px;
-    box-shadow: 1px 3px 9px rgba(0,0,0,0.4);
+    //box-shadow: 1px 9px 14px rgba(247, 244, 244,1);
     
 }
 .change1 {
@@ -126,7 +125,7 @@ body{
         z-index: 90;
         height: 100vh;
         width:30%;
-        background-color: color(general);
+        background-color: color(basic);
         color: color(basic);
         ul{
             margin: 65px 0 0 0;
@@ -144,7 +143,7 @@ body{
                     font-family: sans-serif;
                     font-size: 30px;
                     text-decoration: none;
-                    color: color(basic);
+                    color: color(general);
                     &:hover{
                         color: color(primary);
                     }
@@ -152,68 +151,48 @@ body{
             }
         }
     }
-    .ask{
-        text-align: center;
-        box-sizing: border-box;
-        margin: 10px;
-        padding: 20px;
-        width: 100%;
-        
-        background-color: color(general2);
-        p{
-            margin: 20px;
-            padding: 20px 10px;
-            font-size: 30px;
-            color: color(primary);
-
-        }
-        label{
-            margin: 20px;
-            width: 50px;
-            font-family: sans-serif;
-            font-size: 20px;
-            color: color(basic);
-
-        }
-        input{
-            margin: 15px 0;
-            padding: 5px;
-            font-size:15px ;
-            width: 200px;
-            border: none;
-            box-shadow: 3px 3px 3px rgba(0,0,0,0.7);
-        }
-        textarea{
+    .medi{
+       
+        h1{
             text-align: center;
-            margin: 15px 0;
-            padding: 5px;
-            font-size:15px ;
-           
-            border: none;
-            box-shadow: 3px 3px 3px rgba(0,0,0,0.7);
+            font-family: sans-serif;
+            color: color(primary);
+            text-transform: uppercase;
+        }
+        .text{
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+            width: 80%;
+            box-shadow: 6px 3px 3px rgba(0,0,0,0.5);
+            p{
+                line-height: 30px;
+                font-size: 19px
+            }
         }
     }
-    .call{
+    #eleminf{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 6px 3px 3px rgba(0,0,0,0.5);
+  margin: 5px;
+  .cards{
+      margin: 30px;
+      width: 180px;
+      h2{
+          color: color(primary);
+      }
+      p{
+          font-family: sans-serif;
+          font-size: 20px;
+      }
+  }
+    }
+    .frame{
         text-align: center;
-        margin: 80px;
-        padding: 40px;
-        p{
-font-size: 20px;
-line-height: 30px;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
+        margin: 20px;
     }
-    footer{
-        position: fixed;
-        bottom: 0;
-        height: 80px;
-        width: 120vw;
-        
-        .foot{
-            //border-radius: 50% 50% 0 0;
-            height: 100%;
-            width: 100%;
-            background-color: color(general2);
-        }
-    }
+
 }

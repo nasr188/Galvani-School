@@ -63,8 +63,8 @@ cardCom.appendChild(img);
   cardCom.appendChild(conte);
   // append cardCom in card-menu
   console.log(cardCom);*/
-
-  var url ="https://api.jsonbin.io/b/5fd3aec9fbb23c2e36a5822d/3";
+ ////corsi
+  var url ="https://github.com/nasr188/nasr188.github.io/blob/master/links/corsi/corsi.json";
     fetch(url)
   .then(response=>{
       return response.json()
@@ -76,7 +76,7 @@ cardCom.appendChild(img);
 console.log(datt);
 datt.forEach(data => {
 
-     let cards= `<div class="card-com">
+     let cards= `<div class="card-com" onclick="${data.link}">
 <div class="img">
 <img src ="${data.avatar}" alt="">
 </div>
@@ -91,6 +91,8 @@ datt.forEach(data => {
 father.innerHTML = output
     
   });
+
+  
 
   ////docenti fetch 
   let url2 = "https://api.jsonbin.io/b/5fd8e4af7e2e9559b15d29c0/9"
@@ -145,6 +147,7 @@ for(let i=0;i<data.id.length;i++){
 divImg.addEventListener("click",(e)=>{
 
     const target = e.target;
+   // alert(target)
     console.log(target);
     if(target.matches("img")){
         //cambiare lo stile del principale wraper per addattarsi quando faccio click su di esso(bubbling) 
