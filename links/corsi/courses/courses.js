@@ -26,6 +26,31 @@ function remove(){
 };
 
 
+let url=" https://raw.githubusercontent.com/nasr188/nasr188.github.io/master/links/corsi/corsi.json"
+ fetch(url).then(
+     res=>{
+         return res.json()
+     }
+ ).then(res=>{
+     let dat =res.data
+     let media = document.querySelector(".medi");
+     let output = "";
+     console.log(media);
+     if(media.classList.contains("medii")){
+         for
+         let show = `<h1>${dat[i].content}</h1>`
+         output=show
+     }
+     media.innerHTML= output
+    
+     //if()
+         
+         
+    
+     
+ })
+
+
 
 
 

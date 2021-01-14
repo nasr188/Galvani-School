@@ -164,6 +164,7 @@ body{
     align-items: center;
     box-sizing: border-box;
     .wraper{
+        height: auto;
         width: 20%;
         margin: 10px;
         //border: 1px solid black;
@@ -190,17 +191,37 @@ body{
          .bio{
              box-sizing: border-box;
              text-align: center;
-            height: 200px;
-            //width: 80%;
+            height: 300px;
+           margin-top:20px;
+            width: auto;
             
-            padding: 0;
+            
              background-color: black;
              color: white;
              top: 150px;
-             padding: 5px;
+             padding: 10px;
              
              
          }
-    }
+        
+}
+.wraperch{
+    
+    position: fixed;
+    z-index: 100;
+    top: 12vh;
+    bottom: 8vh;
+    left: 4vw;
+    right: 4vw;
+     width: auto; 
+     height: 37rem;
+  
+
+ text-align:center;
+ background-color:rgb(255,255,255);
+ box-shadow:1px 2px 4px black;
+}
+  
+    
 }
 }

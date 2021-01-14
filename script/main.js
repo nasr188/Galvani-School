@@ -78,7 +78,7 @@ father.innerHTML = output
   .then(data=>{
       console.log(data.id)
      
-      data.id.forEach(()=>{
+      //data.id.forEach(()=>{
 
 for(let i=0;i<data.id.length;i++){
     let cover = document.querySelector(".idcover");
@@ -127,22 +127,18 @@ divImg.addEventListener("click",(e)=>{
     console.log(target);
     if(target.matches("img")){
         //cambiare lo stile del principale wraper per addattarsi quando faccio click su di esso(bubbling) 
-        wraper.style.position="fixed"; 
-        wraper.style.top="100px";
-        wraper.style.left="0";
-        wraper.style.width="350px";
-        wraper.style.textAlign="center"
-        wraper.style.backgroundColor="rgba(255,255,255)";
-        wraper.style.boxShadow="1px 2px 4px black";
+       wraper.classList.add("wraperch");
+      
+
         //wraper.style.width="100vw";
         let bioDiv = document.createElement("p");
         bioDiv.classList.add("bio");
-        bioDiv.style.marginTop="20px";
+        
        let paragg = document.createTextNode(data.id[i].cv);
        bioDiv.append(paragg);
-       divImg.style.width="110px";
+       divImg.style.width="125px";
        
-       img.style.width="110px";
+       img.style.width="125px";
         wraper.insertAdjacentElement("beforeend",bioDiv);
 
         //creare un close button
@@ -162,20 +158,30 @@ divImg.addEventListener("click",(e)=>{
        //facciamo close chiudere il div quando si fa onclick
        close.addEventListener("click", ()=>{
          if(wraper.style.display===""){
-             wraper.style.display="none"
+            
+             wraper.classList.remove("wraperch");
+             wraper.removeChild(bioDiv);
+             wraper.removeChild(close);
+             divImg.style.width="100%";
+             img.style.width="100%";
          }
+            
+
+         
+
+         
        })
 
         console.log(wraper)
 
     }
-      })
+})
     
    
 }
   
      
-    })
+})
     .catch(err=> {
           console.log(err);
     });
@@ -201,7 +207,7 @@ fetch(url3).then(res=>{
         }
         
     })
-})
+//})
   
 }).catch((err)=>{
     console.log(err);
