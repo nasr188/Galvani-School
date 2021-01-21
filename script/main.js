@@ -70,7 +70,6 @@ father.innerHTML = output
 
   
   
-
   ///////////////////////
   var url ="https://raw.githubusercontent.com/nasr188/nasr188.github.io/master/links/corsi/corsi.json";
     fetch(url)
@@ -78,30 +77,33 @@ father.innerHTML = output
       return response.json()
   }).then(result=>{ 
       let datt = result.data;
-      //let media = document.querySelector(".medi");
-  
-      //let output="";
-
-const prova = document.querySelector(".card-com");
-
-
-prova.addEventListener("click", ()=>{
-   
-
-    switch(datt[0]){
-       
-      case datt[0,1,2,3,4,5,6]:
-          alert("yes bitch");
-          break;
-       case [1]:
-           alert("yes bitch222");
-           break;   
-
-     } 
- })
- 
-       
-   
+     
+      let div1 = document.querySelector("#div1");
+      console.log(div1);
+      div1.addEventListener("click", ()=>{
+          alert("div1")
+      })
+      let div2 = document.querySelector("#div2");
+      console.log(div2);
+      div2.addEventListener("click", ()=>{
+        alert("div2")
+    })
+      let div3 = document.querySelector("#div3");
+      console.log(div3);
+      div3.addEventListener("click", ()=>{
+        alert("div3")
+    })
+      let div4 = document.querySelector("#div4");
+      console.log(div4);
+      div4.addEventListener("click", ()=>{
+        alert("div4")
+    })
+      let div5 = document.querySelector("#div5");
+      console.log(div5);
+      div5.addEventListener("click", ()=>{
+        alert("div5")
+    })
+    
    
    
 
