@@ -33,12 +33,13 @@ let url=" https://raw.githubusercontent.com/nasr188/nasr188.github.io/master/lin
      }
  ).then(res=>{
      let dat =res.data
-     let media = document.querySelector(".medi");
+     
      let output = "";
      console.log(media);
-     if(media.classList.contains("medii")){
-         for
-         let show = `<h1>${dat[i].content}</h1>`
+     let i = 0 ;
+     if(  i =  ){
+         
+         let show = `<h1>${dat[i].content}</h1>`;
          output=show
      }
      media.innerHTML= output

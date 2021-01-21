@@ -52,12 +52,12 @@ function goHome(){
 console.log(datt);
 datt.forEach(data => {
 
-     let cards= `<div class="card-com" onclick="${data.link}">
-<div class="img">
+     let cards= `<div class="card-com" id = "${data.id}">
+<div class="img" >
 <img src ="${data.avatar}" alt="">
 </div>
 <div class="link">
-<a href="${data.link}">  ${data.header}</a>
+<a>  ${data.header}</a>
 </div>
  </div>`
     
@@ -67,6 +67,51 @@ datt.forEach(data => {
 father.innerHTML = output
     
   });
+
+  
+  
+
+  ///////////////////////
+  var url ="https://raw.githubusercontent.com/nasr188/nasr188.github.io/master/links/corsi/corsi.json";
+    fetch(url)
+  .then(response=>{
+      return response.json()
+  }).then(result=>{ 
+      let datt = result.data;
+      //let media = document.querySelector(".medi");
+  
+      //let output="";
+
+const prova = document.querySelector(".card-com");
+
+
+prova.addEventListener("click", ()=>{
+   
+
+    switch(datt[0]){
+       
+      case datt[0,1,2,3,4,5,6]:
+          alert("yes bitch");
+          break;
+       case [1]:
+           alert("yes bitch222");
+           break;   
+
+     } 
+ })
+ 
+       
+   
+   
+   
+
+       
+
+
+ 
+});
+
+
 
   
 
