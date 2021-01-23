@@ -59,6 +59,9 @@ datt.forEach(data => {
 <div class="link">
 <a>  ${data.header}</a>
 </div>
+<p>
+${data.content}
+</p>
  </div>`
     
     output+= cards
@@ -77,45 +80,99 @@ father.innerHTML = output
       return response.json()
   }).then(result=>{ 
       let datt = result.data;
-     
+     let card = document.querySelector(".card-com");
+     let link = document.querySelector(".link");
       let div1 = document.querySelector("#div1");
-      console.log(div1);
       div1.addEventListener("click", ()=>{
-          alert("div1")
+         
+          div1.removeAttribute("class", "card-com");
+          card.classList.add("card-change");
+          div2.style.display="none";
+          div3.style.display="none";
+          div4.style.display="none";
+          div5.style.display="none";
+          div6.style.display="none";
+     
       })
+
+
       let div2 = document.querySelector("#div2");
-      console.log(div2);
+      //console.log(div2);
       div2.addEventListener("click", ()=>{
-        alert("div2")
+
+        div2.removeAttribute("class", "card-com");
+        div2.classList.add("card-change");
+       
+        div1.style.display="none";
+        div3.style.display="none";
+        div4.style.display="none";
+        div5.style.display="none";
+        div6.style.display="none";
     })
+
       let div3 = document.querySelector("#div3");
-      console.log(div3);
+      //console.log(div3);
       div3.addEventListener("click", ()=>{
-        alert("div3")
+
+        div3.removeAttribute("class", "card-com");
+        div3.classList.add("card-change");
+
+        div1.style.display="none";
+        div2.style.display="none";
+        div4.style.display="none";
+        div5.style.display="none";
+        div6.style.display="none";
     })
+ 
       let div4 = document.querySelector("#div4");
-      console.log(div4);
+      //console.log(div4);
       div4.addEventListener("click", ()=>{
-        alert("div4")
+        div4.removeAttribute("class", "card-com");
+        div4.classList.add("card-change");
+
+        div1.style.display="none";
+        div2.style.display="none";
+        div3.style.display="none";
+        div5.style.display="none";
+        div6.style.display="none";
     })
+
       let div5 = document.querySelector("#div5");
-      console.log(div5);
+      //console.log(div5);
       div5.addEventListener("click", ()=>{
-        alert("div5")
+        div5.removeAttribute("class", "card-com");
+        div5.classList.add("card-change");
+
+        div1.style.display="none";
+        div2.style.display="none";
+        div3.style.display="none";
+        div4.style.display="none";
+        div6.style.display="none";
+    })
+
+    let div6 = document.querySelector("#div6");
+      console.log(div6);
+      div6.addEventListener("click", ()=>{
+        div6.removeAttribute("class", "card-com");
+        div6.classList.add("card-change");
+
+        div1.style.display="none";
+        div2.style.display="none";
+        div3.style.display="none";
+        div4.style.display="none";
+        div5.style.display="none";
     })
     
    
    
 
-       
+ 
 
 
  
 });
 
 
-
-  
 
   ////docenti fetch 
   let url2 = "https://raw.githubusercontent.com/nasr188/nasr188.github.io/master/links/docenti/docenti.json"
