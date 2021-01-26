@@ -113,6 +113,12 @@ body .change {
   color: white;
 }
 
+@media (min-width: 375px) and (max-width: 509px) {
+  body .change {
+    width: 100%;
+  }
+}
+
 body .change ul {
   margin: 65px 0 0 0;
   padding-top: 65px;
@@ -131,6 +137,13 @@ body .change ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media (min-width: 375px) and (max-width: 509px) {
+  body .change ul {
+    padding: 0;
+    margin: 185px 0px 0 0;
+  }
 }
 
 body .change ul li {

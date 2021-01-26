@@ -170,6 +170,12 @@ body .change ul {
           justify-content: center;
 }
 
+@media (min-width: 375px) and (max-width: 509px) {
+  body .change ul {
+    padding-left: 0;
+  }
+}
+
 body .change ul li {
   margin: 4px;
   padding: 4px;

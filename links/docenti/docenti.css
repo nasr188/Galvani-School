@@ -116,6 +116,12 @@ body .change {
   color: white;
 }
 
+@media (min-width: 375px) and (max-width: 509px) {
+  body .change {
+    width: 100%;
+  }
+}
+
 body .change ul {
   margin: 65px 0 0 0;
   padding-top: 65px;
@@ -134,6 +140,13 @@ body .change ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media (min-width: 375px) and (max-width: 509px) {
+  body .change ul {
+    padding-left: 0;
+    margin: 115px 0 0 0;
+  }
 }
 
 body .change ul li {
@@ -196,6 +209,12 @@ body .idcover .wraper .id-img {
 body .idcover .wraper .id-img img {
   height: 100%;
   width: 100%;
+}
+
+@media (min-width: 375px) and (max-width: 509px) {
+  body .idcover .wraper .id-info ul {
+    padding: 0;
+  }
 }
 
 body .idcover .wraper .id-info ul li {

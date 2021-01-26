@@ -127,6 +127,10 @@ body{
         width:30%;
         background-color: color(basic);
         color: color(basic);
+        @media (min-width: 375px) and (max-width:509px) {
+            width: 100%;
+                 
+             }
         ul{
             margin: 65px 0 0 0;
             padding-top: 65px;
@@ -136,6 +140,10 @@ body{
             flex-flow: column wrap;
             align-items: center;
             justify-content: center;
+            @media (min-width: 375px) and (max-width:509px) {
+                padding-left: 0;
+                margin: 115px 0 0 0;
+                 }
             li{
                margin: 4px;
                padding: 4px;
@@ -190,6 +198,11 @@ body{
                   transform: scale(1.1); 
                 }
             }
+            @media (min-width: 375px) and (max-width:509px) {
+               
+                overflow: hidden;
+                      
+                  }
 .img{
     //border: 1px solid black;
     height: 150px;
@@ -210,10 +223,12 @@ body{
         .link{
             text-align: center;
             margin: 20px;
+          
             
             a{
                 text-decoration: none;
                 color: black;
+               
             }
         }
         p{

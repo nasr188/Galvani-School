@@ -127,6 +127,10 @@ body{
         width:30%;
         background-color: color(general);
         color: color(basic);
+        @media (min-width: 375px) and (max-width:509px) {
+            width: 100%;
+                 
+             }
         ul{
             margin: 65px 0 0 0;
             padding-top: 65px;
@@ -136,6 +140,11 @@ body{
             flex-flow: column wrap;
             align-items: center;
             justify-content: center;
+            @media (min-width: 375px) and (max-width:509px) {
+                padding-left: 0;
+                margin: 115px 0 0 0;
+                     
+                 }
             li{
                margin: 4px;
                padding: 4px;
