@@ -286,9 +286,22 @@ body .card-change .img {
   text-align: center;
 }
 
+@media (min-width: 375px) and (max-width: 509px) {
+  body .card-change .img {
+    width: 350px;
+    margin-top: 5px;
+  }
+}
+
 body .card-change .img img {
   height: 400px;
   width: 400px;
+}
+
+@media (min-width: 375px) and (max-width: 509px) {
+  body .card-change .img img {
+    width: 350px;
+  }
 }
 
 body .card-change .link {
