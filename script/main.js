@@ -62,6 +62,20 @@ datt.forEach(data => {
 <p>
 ${data.content}
 </p>
+<div id= "ore">
+ <div class="compe"> 
+ <p>Corso</p>
+ <span>500 ore</span>
+ </div>
+ <div class="compe"> 
+ <p>Teoria</p>
+ <span>300 ore</span>
+ </div>
+ <div class="compe"> 
+ <p>Stage</p>
+ <span>200 ore</span>
+ </div>
+</div>
  </div>`
     
     output+= cards

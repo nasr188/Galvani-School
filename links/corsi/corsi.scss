@@ -234,6 +234,9 @@ body{
         p{
             display: none;
         }
+        #ore{
+            display:none;
+        }
     }
         .card-change{
            
@@ -289,6 +292,30 @@ body{
             height: 100px;
             width: 100%;
            
+        }
+        #ore{
+            display: flex;
+            flex-flow: row wrap;
+           .compe{
+               display: flex;
+               flex-flow: column;
+               width: 120px;
+               margin: 10px;
+               padding: 10px;
+               box-shadow: 1px 3px 5px rgb(0,0,0);
+               p{
+                   font-size: 30px;
+                   font-family: sans-serif;
+    
+               }
+               span{
+                font-size: 30px;  
+                font-family: sans-serif;
+                color: color(primary);
+               }
+           } 
+
+
         }
     }
 }
