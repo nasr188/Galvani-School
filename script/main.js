@@ -192,7 +192,7 @@ let spa = document.querySelector(".spa");
   });
 
   function goMan(){
-    window.location = "http://127.0.0.1:5500/links/corsi/corsi.html"
+    window.location = "https://nasr188.github.io/links/corsi/corsi.html"
 }
 
   ////docenti fetch 
