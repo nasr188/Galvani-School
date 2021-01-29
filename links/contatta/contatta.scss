@@ -205,6 +205,21 @@ body{
             border: none;
             box-shadow: 3px 3px 3px rgba(0,0,0,0.7);
         }
+         button{
+             cursor: pointer;
+             color: gray;
+             display: block;
+             font-size: 23px;
+             padding: 4px;
+             border: none;
+             border-radius: 3px;
+             font-family: sans-serif;
+             margin: 15px 15px 15px 450px;
+             &:hover{
+                 cursor: pointer;
+                 color:color(primary);
+             }
+         }
     }
     .call{
         text-align: center;
@@ -223,7 +238,7 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         width: 120vw;
         
         .foot{
-            //border-radius: 50% 50% 0 0;
+             
             height: 100%;
             width: 100%;
             background-color: color(general2);

@@ -211,6 +211,23 @@ body .ask textarea {
           box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.7);
 }
 
+body .ask button {
+  cursor: pointer;
+  color: gray;
+  display: block;
+  font-size: 23px;
+  padding: 4px;
+  border: none;
+  border-radius: 3px;
+  font-family: sans-serif;
+  margin: 15px 15px 15px 450px;
+}
+
+body .ask button:hover {
+  cursor: pointer;
+  color: #E6222E;
+}
+
 body .call {
   text-align: center;
   margin: 80px;

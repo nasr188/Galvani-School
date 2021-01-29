@@ -67,15 +67,19 @@ ${data.content}
  <p>Corso</p>
  <span>500 ore</span>
  </div>
+
  <div class="compe"> 
  <p>Teoria</p>
  <span>300 ore</span>
  </div>
+
  <div class="compe"> 
  <p>Stage</p>
  <span>200 ore</span>
  </div>
+ 
 </div>
+<span class="spa" onclick="goMan()"> x </span>
  </div>`
     
     output+= cards
@@ -95,6 +99,7 @@ father.innerHTML = output
   }).then(result=>{ 
       let datt = result.data;
      let card = document.querySelector(".card-com");
+    
      let link = document.querySelector(".link");
       let div1 = document.querySelector("#div1");
       div1.addEventListener("click", ()=>{
@@ -181,12 +186,14 @@ father.innerHTML = output
    
 
  
+let spa = document.querySelector(".spa");
+//console.log("ciao"+spa);
 
+  });
 
- 
-});
-
-
+  function goMan(){
+    window.location = "http://127.0.0.1:5500/links/corsi/corsi.html"
+}
 
   ////docenti fetch 
   let url2 = "https://raw.githubusercontent.com/nasr188/nasr188.github.io/master/links/docenti/docenti.json"

@@ -237,6 +237,9 @@ body{
         #ore{
             display:none;
         }
+        .spa{
+            display: none;
+        }
     }
         .card-change{
            
@@ -315,6 +318,19 @@ body{
                }
            } 
 
+
+        }
+        .spa{
+            
+            margin: 30px;
+            display: block;
+            font-size: 60px;
+            font-family: sans-serif;
+            cursor: pointer;
+            &:hover{
+                color:red;
+                
+            }
 
         }
     }

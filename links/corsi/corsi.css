@@ -268,6 +268,10 @@ body .card-menu #ore {
   display: none;
 }
 
+body .card-menu .spa {
+  display: none;
+}
+
 body .card-change {
   width: 100vw;
   height: 1500px;
@@ -360,5 +364,17 @@ body .card-change #ore .compe span {
   font-size: 30px;
   font-family: sans-serif;
   color: #E6222E;
+}
+
+body .card-change .spa {
+  margin: 30px;
+  display: block;
+  font-size: 60px;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+
+body .card-change .spa:hover {
+  color: red;
 }
 /*# sourceMappingURL=corsi.css.map */
