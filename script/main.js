@@ -316,16 +316,16 @@ divImg.addEventListener("click",(e)=>{
 let url3 = "https://raw.githubusercontent.com/nasr188/nasr188.github.io/master/links/galleria/galleria.json"
 fetch(url3).then(res=>{
     return res.json()
-}).then(data=>{
-    console.log(data)
-    let dat = data.photo;
+}).then(response=>{
+    console.log(response)
+    let dat = response.photo;
     dat.forEach(()=>{
         let cavv = document.querySelector(".imgcav");
         //console.log(cavv)
         let img = document.createElement("img");
         //img.setAttribute("src")
         console.log(dat.length)
-        for(let i=0; i<dat.length; i++){
+        for(let i=0; i< dat.length; i++){
             //console.log(img)
             img.setAttribute("src", dat[i].img)
             cavv.appendChild(img);
