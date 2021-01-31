@@ -59,24 +59,24 @@ datt.forEach(data => {
 <div class="link">
 <a>  ${data.header}</a>
 </div>
-<p>
-${data.content}
-${data.content1}
-${data.content2}
+<p id="contt">
+${data.content}<br>
+${data.content1}<br>
+${data.content3}<br>
 </p>
 <div id= "ore">
  <div class="compe"> 
- <p>Corso</p>
+ <p class="head">Corso</p>
  <span>500 ore</span>
  </div>
 
  <div class="compe"> 
- <p>Teoria</p>
+ <p class="head">Teoria</p>
  <span>300 ore</span>
  </div>
 
  <div class="compe"> 
- <p>Stage</p>
+ <p class="head">Stage</p>
  <span>200 ore</span>
  </div>
  
