@@ -176,6 +176,13 @@ body .ask {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
+@media (min-width: 375px) and (max-width: 509px) {
+  body .ask {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+}
+
 body .ask p {
   margin: 20px;
   padding: 20px 10px;
@@ -211,6 +218,12 @@ body .ask textarea {
           box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.7);
 }
 
+@media (min-width: 375px) and (max-width: 509px) {
+  body .ask textarea {
+    width: 330px;
+  }
+}
+
 body .ask button {
   cursor: pointer;
   color: gray;
@@ -226,6 +239,28 @@ body .ask button {
 body .ask button:hover {
   cursor: pointer;
   color: #E6222E;
+}
+
+@media (min-width: 375px) and (max-width: 509px) {
+  body .ask button {
+    margin: 0;
+  }
+}
+
+body iframe {
+  border: 0;
+  margin-left: 20%;
+  margin-top: 25px;
+  text-align: center;
+}
+
+@media (min-width: 370px) and (max-width: 509px) {
+  body iframe {
+    margin-left: 5px;
+    border: 0;
+    padding: 0;
+    width: 365px;
+  }
 }
 
 body .call {

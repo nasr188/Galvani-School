@@ -61,6 +61,8 @@ datt.forEach(data => {
 </div>
 <p>
 ${data.content}
+${data.content1}
+${data.content2}
 </p>
 <div id= "ore">
  <div class="compe"> 

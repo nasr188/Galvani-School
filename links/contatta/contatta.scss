@@ -173,6 +173,10 @@ body{
         width: 100%;
         
         background-color: color(general2);
+        @media (min-width: 375px) and (max-width:509px) {
+           box-sizing: border-box;
+                 
+             }
         p{
             margin: 20px;
             padding: 20px 10px;
@@ -204,6 +208,10 @@ body{
            
             border: none;
             box-shadow: 3px 3px 3px rgba(0,0,0,0.7);
+            @media (min-width: 375px) and (max-width:509px) {
+                width:330px
+                     
+                 }
         }
          button{
              cursor: pointer;
@@ -219,7 +227,26 @@ body{
                  cursor: pointer;
                  color:color(primary);
              }
+             @media (min-width: 375px) and (max-width:509px) {
+                margin:0;
+                     
+                 }
          }
+
+    }
+    iframe{
+        border:0;
+         margin-left:20%; 
+         margin-top: 25px; 
+         text-align: center;
+        @media (min-width: 370px) and (max-width:509px) {
+            
+           margin-left: 5px;
+           border: 0;
+           padding: 0;
+            width: 365px;
+                 
+             }
     }
     .call{
         text-align: center;
