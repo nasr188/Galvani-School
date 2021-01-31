@@ -245,7 +245,7 @@ body{
            
             
             width: 100vw;
-            height: 1500px;
+            height: 1700px;
             border: 1px solid black;
             display: flex;
             flex-flow: column wrap;
@@ -329,15 +329,20 @@ body{
         }
         .spa{
             
-            margin: 30px;
+           
             display: block;
             font-size: 60px;
             font-family: sans-serif;
             cursor: pointer;
+            @media (min-width: 375px) and (max-width:509px) {
+               
+                margin: 0; 
+                   }
             &:hover{
                 color:red;
                 
             }
+            
 
         }
     }

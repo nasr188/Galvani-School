@@ -274,7 +274,7 @@ body .card-menu .spa {
 
 body .card-change {
   width: 100vw;
-  height: 1500px;
+  height: 1700px;
   border: 1px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -374,11 +374,16 @@ body .card-change #ore .compe span {
 }
 
 body .card-change .spa {
-  margin: 30px;
   display: block;
   font-size: 60px;
   font-family: sans-serif;
   cursor: pointer;
+}
+
+@media (min-width: 375px) and (max-width: 509px) {
+  body .card-change .spa {
+    margin: 0;
+  }
 }
 
 body .card-change .spa:hover {
