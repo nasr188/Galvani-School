@@ -319,20 +319,19 @@ fetch(url3).then(res=>{
 }).then(response=>{
     console.log(response)
     let dat = response.photo;
-    dat.forEach(()=>{
+    dat.forEach((dat)=>{
         let cavv = document.querySelector(".imgcav");
         //console.log(cavv)
-        let img = document.createElement("img");
+        let imge = document.createElement("img");
         //img.setAttribute("src")
-        console.log(dat.length)
-        for(let i=0; i< dat.length; i++){
+        
             //console.log(img)
-            img.setAttribute("src", dat[i].img)
-            cavv.appendChild(img);
-        }
+            imge.setAttribute("src", dat.img)
+            cavv.appendChild(imge);
+        
         
     })
-//})
+
   
 }).catch((err)=>{
     console.log(err);
